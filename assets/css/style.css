@@ -1408,6 +1408,14 @@ ul li {
   width: auto;
 }
 
+.w-80 {
+  width: 80%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
 .w-40 {
   width: 40%;
   text-align: center;
@@ -1415,6 +1423,24 @@ ul li {
 
 .w-30 {
   width: 30%;
+}
+
+.only-desktop {
+  display: none;
+}
+
+.only-mobile {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .only-desktop {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1616,7 +1642,7 @@ ul li {
 
 .banner {
   padding-block: 150px;
-  height: 50vh;
+  height: calc(35vh - 48px);
 }
 
 @media (max-width: 768px) {
