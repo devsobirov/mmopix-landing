@@ -1399,6 +1399,24 @@ ul li {
 .header__top {
   background: #0F1B33;
 }
+
+.header--positioned .navbar-brand {
+  width: 0;
+}
+
+.header-fixed .navbar-brand {
+  width: auto;
+}
+
+.w-40 {
+  width: 40%;
+  text-align: center;
+}
+
+.w-30 {
+  width: 30%;
+}
+
 @media (min-width: 768px) {
   .header__top-area {
     justify-content: space-between;
@@ -1598,8 +1616,16 @@ ul li {
 
 .banner {
   padding-block: 150px;
-  max-height: 100vh;
+  height: 50vh;
 }
+
+@media (max-width: 768px) {
+  .banner {
+    height: unset;
+    max-height: 100vh;
+  }
+}
+
 @media (min-width: 992px) {
   .banner {
     padding-block: 250px;
@@ -2253,6 +2279,12 @@ ul li {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+  .header--positioned .navbar-brand {
+    width: auto;
+  }
+}
+
 @media (max-width: 991px) {
   .trunament__right h3 {
     width: 100%;
