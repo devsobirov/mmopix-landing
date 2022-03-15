@@ -1433,6 +1433,23 @@ ul li {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .banner__content {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+  }
+  .banner__content .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner__content .btn-group a {
+    margin-top: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   .only-desktop {
     display: block;
@@ -2685,9 +2702,32 @@ ul li {
     font-size: 1.5rem;
   }
 }
+
+.feature__content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__content-left img {
+  max-width: 85% !important;
+}
+
 @media (max-width: 575px) {
   .feature__content-left {
     margin-bottom: 20px;
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .feature__content-left img {
+    display: block;
+    height: 54px !important;
+    width: 54px !important;
+  }
+
+  .feature__content-right {
+    width: calc(100% - 80px) !important;
   }
 }
 @media (min-width: 576px) {
