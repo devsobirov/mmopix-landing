@@ -1441,6 +1441,12 @@ ul li {
   .only-mobile {
     display: none;
   }
+
+  .page-static {
+    margin-top: 190px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
